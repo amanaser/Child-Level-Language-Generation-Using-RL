@@ -2,11 +2,19 @@
 
 This repository presents a project for generating **child-like utterances** (specifically **age 2 and under**) using **reinforcement learning**, the **CHILDES dataset**, and a **small language model**. It fine-tunes the `SmolLM2-360M-Instruct` model using **Group Relative Policy Optimization (GRPO)** guided by three custom reward models:
 
+
 -  **Childlikeness**
 -  **Coherence**
 -  **Length Appropriateness**
 
 The goal is to create **age-specific dialogue** that can be used in **educational systems** and **child-robot interaction**.
+
+
+## Human Subject Evaluation
+
+After training with GRPO, the model was deployed on a Cozmo robot and evaluated in a human-subject study. Feedback from participants was gathered to assess the child-likeness and interaction quality of the generated responses.
+
+![Cozmo robot deployment](image.png)
 
 
 ## File Descriptions
